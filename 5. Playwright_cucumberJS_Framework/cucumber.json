@@ -1,0 +1,15 @@
+{   
+
+    "default": {
+      "dryRun" : false,
+      "require": ["./tests/step_definations/**/*.js" ],
+        "paths": ["./features/**/*.feature"],
+
+      "format": [
+                    "json:cucumber-report/cucumber-report.json",
+                    "html:cucumber-report/cucumber-report.html",
+                    "allure-cucumberjs/reporter"
+                ]
+    }
+
+}
