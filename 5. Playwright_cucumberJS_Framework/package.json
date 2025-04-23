@@ -1,0 +1,27 @@
+{
+  "name": "playwright_self_learning",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "CucumberRegression-HTML": "npx cucumber-js --tags \"@Regression2\" --format html:cucumber-report/cucumber-report.html && node generateReport.js",
+    "generate-report": "node generateReport.js",
+    "CucumberRegression-Allure": "npx cucumber-js --tags \"@Regression\" --format allure-cucumberjs/reporter",
+    "allure-report": "allure generate \"./allure-results\" --clean"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.1",
+    "allure-commandline": "^2.33.0",
+    "allure-cucumberjs": "^3.2.1",
+    "multiple-cucumber-html-reporter": "^3.9.2"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "csv-parser": "^3.2.0"
+  }
+}
